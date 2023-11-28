@@ -75,3 +75,25 @@ button:hover{
     visibility: visible;
   
 }
+.formcontrol{
+    position: relative;
+}
+.form-control i{
+    visibility: hidden;
+}
+.formcontrol i{
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    left: 290px;
+}
+.formcontrol.success i.fa-circle-check {
+    visibility:visible;
+  
+}
+.formcontrol.wrong i.fa-circle-exclamation {
+    visibility:visible;
+ 
+}
+
+
