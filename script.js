@@ -29,24 +29,28 @@ const checkInputs = () => {
     }
     else {
         setSuccess(email)
-        // document.write(email.value)
     }
     //password1
+
+    var passlen1=passedValue.length<8
+    var passlen2=passedValue.length<8
     if (passedValue === '') {
         setError(pass1, 'please enter the password')
     }
-    else if(passedValue.length<8){
+    else if(passlen1){
         setError(pass1, 'please enter the password atleast 8 digits')
     }
     else {
         setSuccess(pass1)
-        // document.write(pass1.value)
     }
     //password2
     if (passed2Value === "") {
         setError(pass2, 'please enter the password')
     }
-    else if (passedValue !== passed2Value) {
+    else if(passlen2){
+        setError(pass2, 'please enter the password atleast 8 digits')
+    }
+    else if (passlen1 !== passlen2) {
         setError(pass2, 'Enter the same password')
     }
     else {
