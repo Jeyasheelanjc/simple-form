@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        /* border: 2px solid red; */
+}
+body{
+    background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);
+}
+.container{
+    background-color: #fff;
+}
+.formContainer {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.form-control input:focus {
+    outline: 0;
+}
+form h3{
+    text-align: center;
+}
+input {
+    width: 100%;
+     height: 30px;
+     outline: none;
+     padding: 0 5px;
+ }
+
+/* -------------------------------------- */
+
+small {
+    color: red;
+    visibility: hidden; 
+}
+.but {
+    text-align: center;
+    margin-top: 20px;
+}
+button {
+    border-radius: 9px !important;
+    background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+   background-image: linear-gradient(135deg, #92FFC0 10%, #002661 70%);
+}
+/* -------------------------------------- */
+#form{
+   width: 400px;
+   padding: 20px 40px;
+   background-color: rgba(169, 169, 169, 0.498);
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.formcontrol.success input {
+    border: 3px solid green;
+    /* border-color: green; */
+
+}
+
+.formcontrol.wrong input {
+    border: 3px solid red;
+    /* border-color: red; */
+
+}
+.formcontrol.wrong small{
+    visibility: visible;
+  
+}
